@@ -1,9 +1,15 @@
+"""Basic hello world example."""
+
+
+# pylint: disable=too-few-public-methods
 class HelloWorld:
-    def __init__(self):
-        self.name = "Hello World!"
-    def say_hi(self):
-        print(self.name)
+    """A simple class to print hello world."""
+
+    def say_hello(self):
+        """Prints hello world message."""
+        print("Hello, World!")
+
 
 if __name__ == "__main__":
-    hello = HelloWorld()
-    hello.say_hi()
+    obj = HelloWorld()
+    obj.say_hello()
